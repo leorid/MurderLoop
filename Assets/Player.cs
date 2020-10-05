@@ -51,6 +51,8 @@ namespace JL
 				cp.OnRespawn();
 			}
 
+			EnemySpawner.InvokeClearEvent();
+
 			GameObject newPlayerGO =
 				Instantiate(_playerPrefab.reference, spawnPoint.position,
 				spawnPoint.rotation, transform.parent.parent);

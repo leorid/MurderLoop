@@ -17,6 +17,13 @@ namespace JL
 		public delegate void OnDie();
 		public event OnDie OnDieEvent;
 
+		Transform topParent;
+
+		public void InitBodyPart(CharacterTop characterTop)
+		{
+			topParent = characterTop.transform;
+		}
+
 		private void Start()
 		{
 			_myHealth = health;
@@ -58,7 +65,7 @@ namespace JL
 				}
 				else
 				{
-					transform.SetParent(transform.root);
+					transform.SetParent(topParent);
 				}
 
 				foreach (TargetJoint _myJoint in _myJoints)

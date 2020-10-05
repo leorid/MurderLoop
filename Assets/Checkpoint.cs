@@ -20,6 +20,7 @@ public class Checkpoint : MonoBehaviour
 	private void Start()
 	{
 		_renderer = GetComponent<MeshRenderer>();
+		_OnClaimed -= Checkpoint_OnClaimed;
 		_OnClaimed += Checkpoint_OnClaimed;
 	}
 

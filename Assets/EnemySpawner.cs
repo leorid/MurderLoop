@@ -11,6 +11,14 @@ public class EnemySpawner : MonoBehaviour
 
 	bool _spawned;
 
+	public delegate void OnClear();
+	public static event OnClear OnClearEvent;
+
+	public static void InvokeClearEvent()
+	{
+		OnClearEvent?.Invoke();
+	}
+
 	private void Start()
 	{
 		foreach (Transform child in transform)
@@ -20,6 +28,9 @@ public class EnemySpawner : MonoBehaviour
 				_spawnPoints.Add(child);
 			}
 		}
+
+		OnClearEvent -= Clear;
+		OnClearEvent += Clear;
 	}
 
 	public void Spawn()

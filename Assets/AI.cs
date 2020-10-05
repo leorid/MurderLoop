@@ -33,6 +33,7 @@ namespace JL
 		{
 			_mover = GetComponent<CharacterMove>();
 			_rb = GetComponent<Rigidbody>();
+			head.OnDieEvent -= Head_OnDieEvent;
 			head.OnDieEvent += Head_OnDieEvent;
 		}
 

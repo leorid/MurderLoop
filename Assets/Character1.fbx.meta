@@ -12,7 +12,32 @@ ModelImporter:
   - first:
       74: 8349542763059015795
     second: Armature|Walk
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body
+    second: {fileID: 2100000, guid: 4136d125a0127cf49b73553d833e2486, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Head
+    second: {fileID: 2100000, guid: b9c5d297fbd3d23489d64796fbe715c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Limb1
+    second: {fileID: 2100000, guid: 244f336d963a6a94eb774c561eb423f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Limb2
+    second: {fileID: 2100000, guid: eb16f4ebe5a285b478c5991e71c8de05, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 9e5be8e9ba2e08842954e1d40fe63d8b, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -24,8 +49,7 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
-      human bone 'LeftLowerLeg' not found\n"
+    rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 

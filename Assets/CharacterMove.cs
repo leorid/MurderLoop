@@ -51,6 +51,7 @@ namespace JL
 					Physics.IgnoreCollision(colA, colB);
 				}
 			}
+			head.OnDieEvent -= Head_OnDieEvent;
 			head.OnDieEvent += Head_OnDieEvent;
 		}
 
